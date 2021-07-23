@@ -1,0 +1,12 @@
+// stylelint-disable no-empty-source
+@include font-face("../fonts/roboto/Roboto", "Roboto", 100, normal);
+@include font-face("../fonts/roboto/Robotothinitalic", "Roboto", 100, italic);
+@include font-face("../fonts/roboto/Robotolight", "Roboto", 300, normal);
+@include font-face("../fonts/roboto/Robotolightitalic", "Roboto", 300, italic);
+@include font-face("../fonts/roboto/Roboto", "Roboto", 400, normal);
+@include font-face("../fonts/roboto/Robotoitalic", "Roboto", 500, italic);
+@include font-face("../fonts/roboto/Robotomediumitalic", "Roboto", 500, italic);
+@include font-face("../fonts/roboto/Robotobold", "Roboto", 700, normal);
+@include font-face("../fonts/roboto/Robotobolditalic", "Roboto", 700, italic);
+@include font-face("../fonts/roboto/Robotoblack", "Roboto", 900, normal);
+@include font-face("../fonts/roboto/Robotoblackitalic", "Roboto", 900, italic);

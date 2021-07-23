@@ -1,0 +1,68 @@
+.skills {
+    padding: 30px 10px;
+    border-bottom: 2px #e3e3e3 solid;
+    &__container {
+        max-width: 700px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &__h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        margin-left: -5px;
+        margin-right: -5px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        cursor: pointer;
+        width: calc(100% / 4 - 10px);
+        margin: 20px 5px;
+        label {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            color: #666666;
+            span {
+                width: 19px;
+                height: 19px;
+                margin-right: 10px;
+                border-radius: 5px;
+                background-color: #eeeeee;
+                transition: .3s;
+            }
+        }
+        input {
+            padding: 40px;
+            display: none;
+            &:checked~label span {
+                background-color: #0093d7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s;
+                &::before {
+                    content: "";
+                    background: url('../images/checked.png') no-repeat;
+                    width: 13px;
+                    height: 11px;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            width: calc(100% / 3 - 10px);
+        }
+        @media (max-width: 550px) {
+            width: calc(100% / 2 - 10px);
+        }
+        @media (max-width: 400px) {
+            width: calc(100% - 10px);
+        }
+    }
+}

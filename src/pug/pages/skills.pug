@@ -1,0 +1,12 @@
+prepend vars
+    - title = 'Портфолио "Тинарский Алексей Владимирович"'
+section.skills
+    .container.skills__container
+        h1.skills__h1 Навыки
+        .skills__items 
+            each object, key in data.skills
+                .skills__item 
+                    input(id=key type="checkbox" checked=object.active).js-cursor_skills
+                    label(for=key)
+                        span
+                        !=object.name

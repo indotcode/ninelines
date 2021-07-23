@@ -1,0 +1,27 @@
+.sensor {
+    width: 254px;
+    position: relative;
+    img {
+        width: 254px;
+    }
+    &__cursor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: block;
+        background-color: #3e3d40;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+        margin: 0 auto;
+        transition: .5s;
+        &::before {
+            content: "";
+            border: 10px solid transparent;
+            border-right: 54px solid #3e3d40;
+            position: absolute;
+            right: 11px;
+        }
+    }
+}
